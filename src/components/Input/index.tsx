@@ -81,6 +81,7 @@ const Input: React.RefForwardingComponent<InputRef, InputProps> = (
         color={isFocused || isFilled ? '#ff9000' : '#666360'}
       />
       <TextInput
+        ref={inputElementRef}
         keyboardAppearance="dark"
         {...rest}
         onFocus={handleFocus}
